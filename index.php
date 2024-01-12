@@ -1,8 +1,13 @@
 <?php
-$my_var = 3;
+$my_var = 'PHP Badwords';
+$my_text = 'Ciao, oggi ho cominciato ad usare PHP, ********';
 ?>
 
-
-<h1>
-    ciao <?php echo $my_var ?>
-</h1>
+<div>
+    <h1>
+        <?php echo $my_var ?>
+    </h1>
+    <p>
+        <?php echo $my_text ?>
+    </p>
+</div>
