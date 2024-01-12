@@ -1,13 +1,15 @@
 <?php
 $my_var = 'PHP Badwords';
 $my_text = 'Ciao, oggi ho cominciato ad usare PHP, per ora sembra figo e divertente ma anche complicato. Speriamo bene.';
-?>
 
-<!-- verifico che sia stato inviato un modulo con la parola da censurare -->
+// verifico che sia stato inviato un modulo con la parola da censurare
 if (isset($_GET['word'])) {
-<!-- parola da censurare è stata mandata correttamente -->
-$parolaDaCensurare = $_GET['word'];
+    // parola da censurare è stata mandata correttamente
+    $parolaDaCensurare = $_GET['word'];
+    // sostiuisci la parola con tre asterischi
+    $my_text = str_ireplace($parolaDaCensurare, '***', $my_text);
 }
+?>
 
 <div>
     <h1>
