@@ -3,6 +3,11 @@ $my_var = 'PHP Badwords';
 $my_text = 'Ciao, oggi ho cominciato ad usare PHP, per ora sembra figo e divertente ma anche complicato. Speriamo bene.';
 ?>
 
+<!-- verifico che sia stato inviato un modulo con la parola da censurare -->
+if (isset($_GET['word'])) {
+
+}
+
 <div>
     <h1>
         <?php echo $my_var ?>
