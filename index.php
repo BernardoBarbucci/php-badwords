@@ -1,4 +1,5 @@
 <?php
+// variabili
 $my_var = 'PHP Badwords';
 $my_text = 'Ciao, oggi ho cominciato ad usare PHP, per ora sembra figo e divertente ma anche complicato. Speriamo bene.';
 
@@ -11,6 +12,7 @@ if (isset($_GET['word'])) {
 }
 ?>
 
+
 <div>
     <h1>
         <?php echo $my_var ?>
@@ -20,7 +22,7 @@ if (isset($_GET['word'])) {
     </p>
 </div>
 <div>
-    <form action="index.php" method="get">
+    <form action="index.php" method="get" autocomplete="off">
         <label for="word">Inserisci la parola da censurare:</label>
         <input type="text" id="word" name="word">
         <button type="submit">Censura</button>
