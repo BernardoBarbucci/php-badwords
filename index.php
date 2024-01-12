@@ -5,7 +5,8 @@ $my_text = 'Ciao, oggi ho cominciato ad usare PHP, per ora sembra figo e diverte
 
 <!-- verifico che sia stato inviato un modulo con la parola da censurare -->
 if (isset($_GET['word'])) {
-
+<!-- parola da censurare è stata mandata correttamente -->
+$parolaDaCensurare = $_GET['word'];
 }
 
 <div>
